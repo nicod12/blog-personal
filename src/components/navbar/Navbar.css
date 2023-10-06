@@ -1,0 +1,37 @@
+.sidenav {
+    width: 240px;
+    background: #011627;
+    position: absolute;
+    height: 95vh;
+    padding: 0 30px;
+    transition: all 1s;
+}
+
+ul {
+    padding: 0;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 0 5px 0;
+}
+ul li :first-child {
+    margin-top: 5px;
+}
+
+ul li h2 {
+    color: #eaecef;
+    font-size: 16px;
+    display: block;
+    padding: 10px 15px;
+    border-radius: 6px;
+    text-transform: uppercase;
+}
+.dec-none {
+    text-decoration: none;
+}
+
+ul li h2:hover,
+ul li h2.active {
+ background: #172b4d;
+}
