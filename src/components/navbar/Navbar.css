@@ -1,10 +1,13 @@
 .sidenav {
     width: 240px;
     background: #011627;
-    position: absolute;
-    height: 95vh;
+    position: fixed;
+    top: 60px;
+    left: 0; 
+    height: 100vh;
     padding: 0 30px;
     transition: all 1s;
+    z-index: 1; 
 }
 
 ul {
@@ -29,7 +32,13 @@ ul li h2 {
 }
 .dec-none {
     text-decoration: none;
+    color: inherit;
 }
+
+.disabled-link {
+    opacity: 0.5;
+    pointer-events: none;
+  }
 
 ul li h2:hover,
 ul li h2.active {

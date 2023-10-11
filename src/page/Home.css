@@ -1,0 +1,14 @@
+/* Estilos generales de la página de inicio */
+.home-page {
+    position: relative;
+    margin-top: 100px; /* Ajusta el valor según la altura de tu header */
+    margin-left: 250px; /* Ajusta el valor según el ancho de tu aside */
+  }
+  
+.home-content {
+    margin-top: 100px;
+    margin-left: 260px;
+    width: 250px;
+    height: 300px;
+    background-color: black;
+}
