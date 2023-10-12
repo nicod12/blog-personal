@@ -5,5 +5,9 @@
   margin: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  color: #eaecef;
+  color: #fefeff;
+}
+
+.text-center {
+  text-align: center;
 }

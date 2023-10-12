@@ -1,5 +1,6 @@
 .sidenav {
-    width: 240px;
+    max-width: 240px;
+    width: auto;
     background: #011627;
     position: fixed;
     top: 60px;

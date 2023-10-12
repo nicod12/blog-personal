@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom'
 
 const menuItems = [
   { title: 'Inicio', link: '/' },
-  { title: 'Programación Básica', link: '/introduccion-a-la-programacion' },
-  { title: 'JavaScript', link: '/javascript', disabled: true },
+  { title: 'Introducción - Programación', link: '/introduccion-a-la-programacion' },
   { title: 'HTML', link: '/html', disabled: true },
   { title: 'CSS', link: '/css', disabled: true },
-  { title: 'React JS', link: '/react-js', disabled: true },
-  { title: 'Tdd', link: '/tdd', disabled: true }
+  { title: 'JavaScript', link: '/javascript', disabled: true }
+  // { title: 'Tdd', link: '/tdd', disabled: true },
+  // { title: 'React JS', link: '/react-js', disabled: true }
 ]
 
 export const MenuItems = (): JSX.Element => {
