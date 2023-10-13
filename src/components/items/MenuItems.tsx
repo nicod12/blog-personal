@@ -1,9 +1,11 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 
 const menuItems = [
   { title: 'Inicio', link: '/' },
-  { title: 'Introducción - Programación', link: '/introduccion-a-la-programacion' },
+  {
+    title: 'Introducción - Programación',
+    link: '/introduccion-a-la-programacion'
+  },
   { title: 'HTML', link: '/html', disabled: true },
   { title: 'CSS', link: '/css', disabled: true },
   { title: 'JavaScript', link: '/javascript', disabled: true }
@@ -12,12 +14,6 @@ const menuItems = [
 ]
 
 export const MenuItems = (): JSX.Element => {
-  const [selectedMenuItem, setSelectedMenuItem] = useState<number | null>(null)
-
-  const handleMenuItemClick = (index: number): void => {
-    setSelectedMenuItem(index)
-  }
-
   return (
     <ul>
       {menuItems.map((item, index) => (
@@ -27,13 +23,7 @@ export const MenuItems = (): JSX.Element => {
               <h2>{item.title}</h2>
             </div>
           ) : (
-            <Link
-              to={item.link}
-              className={`dec-none ${selectedMenuItem === index ? 'active' : ''}`}
-              onClick={() => {
-                handleMenuItemClick(index)
-              }}
-            >
+            <Link to={item.link} className="dec-none">
               <h2>{item.title}</h2>
             </Link>
           )}
