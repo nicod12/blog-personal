@@ -1,6 +1,6 @@
-import { FooterComp } from '../components/footer/FooterComp'
-import { HeaderComp } from '../components/header/HeaderComp'
-import { Navbar } from '../components/navbar/Navbar'
+import { FooterComp } from '../../components/footer/FooterComp'
+import { HeaderComp } from '../../components/header/HeaderComp'
+import { Navbar } from '../../components/navbar/Navbar'
 import './Home.css'
 
 export const HomePage = (): JSX.Element => {
