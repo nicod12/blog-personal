@@ -1,16 +1,43 @@
 .sidenav {
+    display: flex;
+    flex-direction: column;
     max-width: 240px;
     width: auto;
     background: #0e0d0d;
     position: fixed;
     top: 60px;
-    left: 0; 
     height: 100vh;
     padding: 0 30px;
-    transition: all 1s;
-    z-index: 1; 
-}
+    transition: left 0.5s;
+    z-index: 1;
+    left: -180px; 
+  }
+  
+  .sidenav.open {
+    left: 0px; 
+  }
 
+  .primary {
+    background-color: red;
+  }
+  
+  .toggle-button {
+    align-self: flex-end;
+    margin: 10px; 
+  }
+
+  .cont-btn {
+    position: relative;
+    top: 5px;
+    left: 100px;
+  }
+
+  .cont-btn button {
+    position: absolute;
+    left: 70px;
+    top: -5px;
+  }
+  
 ul {
     padding: 0;
     background: #0e0d0d;
@@ -18,7 +45,7 @@ ul {
 
 ul li {
     list-style: none;
-    margin: 0 0 5px 0;
+    margin: 0 5 5px 0;
     background: #0e0d0d;
 }
 ul li :first-child {
