@@ -13,7 +13,7 @@ export const Navbar = (): JSX.Element => {
     <div className={`sidenav ${isSidebarOpen ? 'open' : ''}`}>
      <div className='cont-btn'>
       <button className='primary toggle-button' onClick={toggleSidebar}>
-          [x]
+          {'> | <'}
         </button>
      </div>
       <MenuItems />

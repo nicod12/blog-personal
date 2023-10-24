@@ -8,5 +8,15 @@ header {
     top: 0;
     left: 0;
     position: fixed;
-    z-index: 2; 
+    z-index: 2;
+    display: flex;
+    justify-content: center; 
+}
+
+header img {
+    background-color: #000000;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    margin: 0 auto;
 }

@@ -22,14 +22,26 @@
   }
   
   .toggle-button {
-    align-self: flex-end;
-    margin: 10px; 
+    background-color: #3498db; 
+    color: white; 
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px; 
+    font-size: 16px; 
+    cursor: pointer; 
+    transition: background-color 0.3s; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-
+  
+  .toggle-button:hover {
+    background-color: #2980b9;
+  }
   .cont-btn {
     position: relative;
-    top: 5px;
-    left: 100px;
+    top: 10px;
+    left: 75px;
   }
 
   .cont-btn button {
